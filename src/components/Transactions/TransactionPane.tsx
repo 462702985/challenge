@@ -27,8 +27,8 @@ export const TransactionPane: TransactionPaneComponent = ({
             transactionId: transaction.id,
             newValue,
           })
-          console.log(approved);
           setApproved(newValue)
+          
         }}
       />
     </div>

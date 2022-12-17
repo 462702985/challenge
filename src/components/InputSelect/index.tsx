@@ -17,13 +17,11 @@ export function InputSelect<TItem>({
     top: 0,
     left: 0,
   })
-
   const onChange = useCallback<InputSelectOnChange<TItem>>(
     (selectedItem) => {
       if (selectedItem === null) {
         return
       }
-
       consumerOnChange(selectedItem)
       setSelectedValue(selectedItem)
     },
